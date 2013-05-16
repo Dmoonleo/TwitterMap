@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#333333</color>
+    <color name="blue">#00F</color>
+    <color name="activity_main_bg_color">#E5E5E5</color>
+    <color name="list_border">#A5A5A5</color>
+    <color name="search_background">#EFEAEA</color>
+    <color name="menu_background">#000000</color>
+    <color name="red">#FF3030</color>
+</resources>

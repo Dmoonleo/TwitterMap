@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="5dp" >
+
+	<LinearLayout android:id="@+id/image_container" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView
+		    android:id="@+id/image"
+		    android:contentDescription="@string/nonesense"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+        
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_container"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@+id/image_container"
+        android:textColor="#040404"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_container"
+        android:layout_below="@id/name"
+        android:layout_marginTop="1dip"
+        android:layout_marginBottom="4dip"
+        android:layout_toRightOf="@+id/image_container"
+        android:textColor="#343434"
+        android:textSize="6sp" />
+
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/name" >
+
+        <ImageView
+		    android:id="@+id/button"
+		    android:contentDescription="@string/nonesense"
+		    android:layout_width="24dip"
+		    android:layout_height="24dip"
+        	android:layout_marginRight="4dip" />
+
+    </LinearLayout>
+	
+</RelativeLayout>

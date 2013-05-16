@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="horizontal"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/dm_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="send time"
+        android:textColor="@color/grey"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/dm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dm_send_time"
+        android:layout_toLeftOf="@+id/sender_avatar"
+        android:paddingRight="5dp"
+        android:text="Content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/grey"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/sender_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/actionbar_favorite" />
+
+</RelativeLayout>
